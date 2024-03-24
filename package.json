@@ -1,0 +1,19 @@
+{
+  "name": "ec2-template",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "pnpm": "8.12.1",
+    "npm": "please_use_pnpm_instead"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.6.1"
+  }
+}
