@@ -18,20 +18,6 @@ export class VpcConstruct extends Construct {
       ],
     });
 
-    const publicRouteTable = new ec2.CfnRouteTable(
-      this,
-      `${id}-VpcConstructPublicRouteTable`,
-      {
-        vpcId: myVpc.vpcId,
-      }
-    );
-
-    new ec2.CfnRoute(this, `${id}-VpcConstructIgwRoute`, {
-      routeTableId: publicRouteTable.ref,
-      destinationCidrBlock: '0.0.0.0/0',
-      gatewayId: myVpc.internetGatewayId,
-    });
-
     this.myVpc = myVpc;
   }
 }
